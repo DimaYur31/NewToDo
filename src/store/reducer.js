@@ -9,7 +9,6 @@ export const actionTypes = {
 export const toDoReducer = (state, action) => {
 	switch (action.type) {
 		case actionTypes.ADD:
-		case actionTypes.EDIT:
 			return [
 				...state,
 				{
@@ -18,6 +17,16 @@ export const toDoReducer = (state, action) => {
 					complited: false
 				}
 			];
+		case actionTypes.EDIT:
+			return state.map(item => {
+				if (item.id !== action.payload.id) return item;
+
+				return {
+					id: action.payload.id,
+					text: action.payload.text,
+					complited: false
+				}
+			})
 
 		case actionTypes.COMPLITE:
 			return state.map(item => {
@@ -28,7 +37,6 @@ export const toDoReducer = (state, action) => {
 					complited: !item.complited
 				}
 			})
-
 
 		case actionTypes.COPY:
 			return [
