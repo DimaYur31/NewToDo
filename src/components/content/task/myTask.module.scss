@@ -1,0 +1,80 @@
+.task {
+	position: relative;
+	display: grid;
+	grid-template: 48px/ 16px 1fr minmax(20px, 80px);
+	grid-gap: 8px;
+	align-items: center;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 19px;
+	color: #373737;
+	padding: 0 12px;
+	overflow: hiden;
+	
+	.checkbox {
+		position: relative;
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background: #ffffff;
+		border: 1px solid #ececec;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.complited {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+			background: #550dc9;
+			width: 16px;
+			height: 16px;
+			border: 1px solid #550dc9;
+			border-radius: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&::before {
+				content: url("../../../images/checked.svg");
+			}
+		}
+	
+	.text {
+		display: block;
+		width: 100%;
+		max-height: 42px;
+		word-wrap: break-word;
+		overflow: auto;
+		padding-right: 10px;
+	}
+	
+	.btns {
+		display: grid;
+		grid-column: 3/4;
+		grid-template: 1fr / repeat(3, 20px);
+		grid-gap: 8px;
+	}
+	
+	.edit,
+	.copy,
+	.delete {
+		display: inline-block;
+		border: none;
+		background: #fff;
+		cursor: pointer;
+	}
+
+	.edit::before {
+		content: url("../../../images/edit.svg");
+	}
+
+	.copy::before {
+		content: url("../../../images/copy.svg");
+	}
+
+	.delete::before {
+		content: url("../../../images/delete.svg");
+	}
+}

@@ -1,0 +1,16 @@
+.button {
+	position: relative;
+	min-width: 50px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	font-family: Open Sans;
+	font-size: 14px;
+	line-height: 19px;
+	background: #550dc9;
+	color: #ffffff;
+	cursor: pointer;
+	border: none;
+}

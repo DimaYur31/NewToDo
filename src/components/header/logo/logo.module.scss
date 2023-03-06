@@ -1,0 +1,23 @@
+.box {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 52px;
+
+	img {
+		display: inline-block;
+		width: 19px;
+		height: 24px;
+		margin-bottom: 2px;
+	}
+
+	p {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 6px;
+		line-height: 7px;
+	}
+}

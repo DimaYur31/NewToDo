@@ -1,0 +1,26 @@
+.user {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-family: Open Sans;
+	font-size: 14px;
+	line-height: 19px;
+	
+	img {
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+	}
+
+	span {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.vector {
+		position: absolute;
+		left: 0;
+		width: 7.07px;
+		height: 4.09px;
+	}
+}

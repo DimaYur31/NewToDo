@@ -1,0 +1,17 @@
+.sideBar {
+	position: relative;
+	width: 54px;
+	height: calc(100vh - 64px);
+	background: #550dc9;
+	padding-top: 24px;
+	
+	span {
+		position: relative;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #440ba0;
+		cursor: pointer;
+	}
+}

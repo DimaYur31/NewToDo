@@ -1,0 +1,45 @@
+.wrapper{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1.2fr .8fr;
+	grid-gap: 20px;
+	padding: 10px;
+	
+	.list{
+		display: flex;
+		flex-direction: column;
+		height: 68vh;
+
+		div{
+			margin-top: 10px;
+			overflow: auto;
+		}
+		
+	
+
+		>span{
+			max-width: 70px;
+			background: #ddfcf1b2;
+			
+			span{
+				background: #e0fcddb2;
+				max-width: 90px;
+				width: 90px;
+			}
+		}
+	}
+}
+
+@media (max-width:650px){
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		overflow: auto;
+		grid-gap: 10px;
+		padding: 0;
+
+		.list{
+			height: 33vh;
+		}
+	}
+}
